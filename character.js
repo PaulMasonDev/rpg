@@ -2,7 +2,7 @@ class Character {
   constructor() {
     this.x = 0;
     this.y = 0;
-    this.speed = 5;
+    this.speed = 50;
     this.sprite = document.createElement('div');
     this.sprite.classList.add('character');
     document.body.appendChild(this.sprite);
