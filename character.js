@@ -1,3 +1,5 @@
+alert("working")
+
 class Character {
   private x: number;
   private y: number;
