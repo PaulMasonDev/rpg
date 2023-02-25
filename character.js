@@ -1,11 +1,4 @@
-alert("working")
-
 class Character {
-  private x: number;
-  private y: number;
-  private speed: number;
-  private sprite: HTMLDivElement;
-
   constructor() {
     this.x = 0;
     this.y = 0;
@@ -16,27 +9,27 @@ class Character {
     this.addEventListeners();
   }
 
-  public moveUp(): void {
+  moveUp() {
     this.y -= this.speed;
     this.sprite.style.top = `${this.y}px`;
   }
 
-  public moveDown(): void {
+  moveDown() {
     this.y += this.speed;
     this.sprite.style.top = `${this.y}px`;
   }
 
-  public moveLeft(): void {
+  moveLeft() {
     this.x -= this.speed;
     this.sprite.style.left = `${this.x}px`;
   }
 
-  public moveRight(): void {
+  moveRight() {
     this.x += this.speed;
     this.sprite.style.left = `${this.x}px`;
   }
 
-  private addEventListeners(): void {
+  addEventListeners() {
     document.addEventListener('keydown', (event) => {
       switch (event.key) {
         case 'ArrowUp':
