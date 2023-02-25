@@ -1,6 +1,9 @@
 #game {
   border: 1px solid black;
   position: relative;
+  width: 100%;
+  height: calc(100vh - 120px);
+  max-height: calc(100vw - 64px);
 }
 
 .character {
